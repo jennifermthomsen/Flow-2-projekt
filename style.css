@@ -1,0 +1,605 @@
+*{
+    font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* colors
+black, color: #000000;
+gray, color: #262626;
+blue, color: #1D2851;
+beige, color: #E2D7AC;
+white, color: #FFFFFF;
+*/
+
+body{
+    font-size: 14px;
+}
+
+/* navigation */
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background-color: #1D2851;
+}
+
+.container{
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo a{
+    font-weight: 450;
+    letter-spacing: 4.5px;
+    color: #E2D7AC;
+}
+
+.navigation a{
+    margin: 0 20px;
+    font-size: 0.75rem;
+    letter-spacing: 4.5px;
+    color: #E2D7AC;
+    font-weight: 400;
+    margin-inline-end: 0;
+}
+
+.navigation a.active{
+    color: #ffffff;
+}
+
+/* general */
+main{
+    display: flex;
+    align-items: center;
+    background-color: #1D2851;
+    position: relative;
+    height: 90vh;
+    z-index: 9;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background-color: #ffffff
+}
+
+.nav-container{
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.nav-logo a{
+    font-weight: 450;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+
+.nav-menu a{
+    margin: 0 20px;
+    font-size: 0.75rem;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+    font-weight: 400;
+    margin-inline-end: 0;
+}
+
+.nav-menu a.active{
+    color: #E2D7AC;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #1D2851;
+    height: 10vh;
+}
+
+footer .scroll-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 10vh;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+
+/* scroll navigation bar */
+.scroll-container{
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    background-color: #ffffff;
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 8;
+}
+
+.scroll-logo a{
+    font-weight: 450;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+  
+/* Links inside the navbar */
+.navbar a{
+    margin: 0 20px;
+    font-size: 0.75rem;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+    font-weight: 400;
+    margin-inline-end: 0;
+}
+
+.navbar a.active{
+    color:#E2D7AC ;
+}
+
+.photo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #1D2851;
+    height: 10vh;
+    color: #E2D7AC;
+}
+  
+/* Main content */
+.text{
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+} 
+
+/* index */
+.main-text{
+    font-size: 3rem;
+    letter-spacing: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 65%;
+    transform: translateY(-50%);
+    text-align: center;
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+
+.main-text p{
+    font-size: 2rem;
+    top: 200%;
+}
+
+main .container{
+    justify-content: center;
+}
+
+.main-image img{
+    margin-top: 5rem;
+    width: 436px;
+}
+
+/* about */
+.container-about{
+    width: 1240px;
+    min-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80px;
+}
+
+main .about-text{
+    padding: 48px 0 0 0;
+    margin: 0 0 0 100px;
+    position: relative;
+    color: #E2D7AC;
+    width: 33%;
+}
+
+.about-text h3{
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: 4.5px;
+    margin: 0;
+}
+
+.about-text p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 20px 0 30px 0;
+}
+
+.about-text a{
+    color: #E2D7AC;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+}
+
+.about-image img{
+    padding: 48px 0 0 0;
+    margin: 0 100px 0 0;
+    width: 440px;
+}
+
+/* portfolio */
+.container-portfolio{
+    width: 1240px;
+    min-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80px;
+}
+
+main .portfolio-text{
+    padding: 32px 0 0 0;
+    margin: 0 0 0 100px;
+    position: relative;
+    color: #E2D7AC;
+    width: 33%;
+}
+
+.portfolio-text h3{
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: 4.5px;
+}
+
+.portfolio-text p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 20px 0 30px 0;
+}
+
+.portfolio-menu{
+    margin-bottom: 154px;
+}
+
+.portfolio-menu a{
+    display: flex;
+    justify-content: right;
+    padding: 30px 0 0 0;
+    margin: 0 100px 0 0;
+    color: #E2D7AC;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+}
+
+/* contact */
+.container-contact{
+    width: 1240px;
+    min-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80px;
+}
+
+main .contact-text{
+    padding: 0px 0 0 0;
+    margin: 64px 0 0 100px;
+    position: relative;
+    color: #E2D7AC;
+    width: 100%;
+}
+
+.contact-text h3{
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: 4.5px;
+    margin: 0;
+}
+
+.contact-text p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 20px 0 30px 0;
+}
+
+/* contact form */
+input[type=text], select, textarea{
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #1D2851;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 6px 0 16px 140px;
+    resize: vertical 
+}
+  
+/* the submit button */
+input[type=submit]{
+    background-color: #E2D7AC;
+    color:#1D2851;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 0 0 290px;
+}
+  
+input[type=submit]:hover{
+    background-color: #ffffff;
+}
+  
+.contact{
+    border-radius: 5px;
+    background-color:#1D2851;
+    padding: 20px;
+    margin: 186px 0 0 0;
+} 
+
+.foto-text{
+    font-size: 3rem;
+    letter-spacing: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+
+.foto-image img{
+    width: 400px;
+    margin: 0 100px;
+}
+
+.foto-1{
+    padding: 0 0 70px 0;
+}
+
+.foto-2{
+    padding: 70px 0 0 0;
+}
+
+.photo-content{
+    padding: 0;
+    margin: 0 0 48px 0;
+}
+ 
+.photo-row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 7;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+
+.photo-row2, .left{
+    padding: 0 48px 0 0;
+}
+
+.photo-row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 96px;
+    z-index: 7;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+
+.photo-row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 36px 0 0;
+    z-index: 7;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+
+.photo-row4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 44px;
+    z-index: 7;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+}
+
+.photo-content img{
+    float: left;
+    width:  503px;
+    height: 340px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.right{
+    transform: rotate(-90deg);
+    color: #1D2851;
+}
+
+.left{
+    transform: rotate(+90deg);
+    color: #1D2851;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #E2D7AC;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: relative;
+    height: 85vh;
+    z-index: 7;
+}
+
+.photo{
+    position: absolute;
+    justify-content: center;
+    z-index: 9;
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.photo img{
+    width: 700px;
+    padding: 0 0 0 206px;
+
+}
+
+section p{
+    transform: rotate(+90deg);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 4.5px;
+    color: #1D2851;
+    margin: 0 200px 0 200px;
+}
+
+.back{
+    color: #1D2851;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 4.5px;
+
+}
+
+.back a{
+    color: #1D2851;
+}
+
+.video-container{
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+}
+
+.video-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 48px 0;
+}
+
+.video-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 72px 0;
+}
+
+.video-text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.video-text{
+    color: #1D2851;
+}
+
+.video-text h3{
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: 4.5px;
+    margin: 0 0 0 100px;
+}
+
+.video-text p{
+    width: 50%;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 0 100px 30px 0;
+}
+
+.grafik h3{
+    transform: rotate(-90deg);
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: 4.5px;
+    margin: 0 0 0 100px;
+    color: #1D2851;
+}
