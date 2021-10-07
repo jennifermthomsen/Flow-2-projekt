@@ -406,6 +406,16 @@ input[type=submit]:hover{
     padding: 0;
     margin: 0 0 48px 0;
 }
+
+.container{
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
  
 .photo-row1{
     display: flex;
@@ -420,15 +430,11 @@ input[type=submit]:hover{
     color: #1D2851;
 }
 
-.photo-row2, .left{
-    padding: 0 48px 0 0;
-}
-
 .photo-row2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 96px;
+    margin: 0 0 0 48px;
     z-index: 7;
     font-weight: 700;
     font-size: 0.75rem;
